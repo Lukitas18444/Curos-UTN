@@ -46,15 +46,26 @@ main{
     width: 100%;
     height: auto;
     border: 1px solid black;
-    height: 100vh;
 }
-main .container-imagen{
+main .container-aside{
     width: 30%;
     position: sticky;
-    border: 1px solid red;
-    margin-left: 50px;
+    border: 1px solid rgb(59, 52, 52);
+    left: 10%;
+    margin-top: 2%;
 }
-.container-imagen img{
+.container-aside img{
     width: 100%;
     height: auto;
+}
+#receta{
+    border: 10px solid green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#ingredientes{
+    height: 100vh;
+    width: auto;
 }
