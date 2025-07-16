@@ -1,0 +1,176 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(./images/crustaceo.webp);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    
+}
+
+span{
+    background-color: white;
+    width: 80%;
+    height: 2px;
+    margin: auto;
+}
+/* ------------Nav---------- */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: end;
+    width: auto;
+    height: 100px;
+    background-color: #afc3cc;
+}
+nav samp{
+    color: #650809;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    list-style: none;  
+}
+ul li > a{
+    text-decoration: none;
+    color: black;
+}
+ul li > a:hover{
+    color:#650809;
+    transition: all 1s;
+}
+ul li > a:not(hover){
+    transition: all 2s;
+}
+
+/*----------Fin de Nav ---------*/
+
+/* -----Receta -----------   */
+#receta{
+    background-color: #80a484;
+    margin: 0;
+    padding: 20px 5px;
+    width: 98%;
+}
+
+
+
+.container-receta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.container-descripcion{
+    text-align: center;
+    padding: 0px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 5px 8px 10px #650809;
+    color: #3e2e15;
+}
+.container-descripcion h2{
+    text-shadow: none;
+
+}
+
+
+
+
+/* ----- Fin Receta -----------   */
+
+
+/* ----- ingredientes -----------   */
+
+#ingredientes{
+    margin: 50px 0;
+    height: 100vh;
+    position: relative;
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    
+}
+
+.container-ingredientes{
+    position: sticky;
+    height: auto;
+    width: 30%;
+    border: 1px solid black;
+    gap: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    background: linear-gradient(
+        0deg,
+        rgba(130,96,66,0.8),
+        rgba(130,96,66,0.8)
+    );
+    list-style: none;
+    
+}
+.container-ingredientes img{
+    width: 30px;
+    height: auto;
+}
+.container-imagen  img{
+    width: 70%px;
+    height: auto;
+}
+
+
+
+/* ----- fin ingredientes -----------   */
+
+
+/* ----- Paso a Paso -----------   */
+
+#pasos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 98%;
+}
+
+.container-pasos{
+    width: 80%;
+}
+
+.container-pasos ol{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 20px 30px; 
+    grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". . ."; 
+    width: 100%;
+}
+.container-pasos ol li{
+    width: 100%;
+    background-color: green;
+    height: auto;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0;
+    padding: 10px ;
+}
+
+
+
+/* ----- Fin del Paso a Paso -----------   */
