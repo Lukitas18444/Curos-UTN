@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --blanco: #DBD3AD;
+    --blush: #E0607E;
+    --rojo: #D36060;
+    --marron: #C2714F;
+    --beige: #F6C5AF
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    margin: 0;
+    padding: 0;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+     background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    );
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.video-fondo{
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+    position: absolute;
+}
+#hero h1{
+    color: var(--blanco);
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: "Nunito", sans-serif;
+}
+.container-redes{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+span{
+    width: 50vw;
+    height: 1px;
+    border: 1px solid cadetblue;
+    color: #C2714F;
+    display: block;
+    margin: 20px auto;
+}
+
+
+#portfolio{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#portfolio aside{
+    width: 20%;
+    height: 100%;
+    background-color: red;
+}
+#portfolio .container-portfolio{
+    width: 70%;
+    height: 100%;
+    background-color: blue;
+}
