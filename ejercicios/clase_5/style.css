@@ -14,6 +14,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /*----------- header----------*/
@@ -29,6 +30,7 @@ header{
     justify-content: space-around;
     align-items: center;
     z-index: 1;
+
 }
 header:hover{
     background-color: var(--blanco);
@@ -151,6 +153,7 @@ span{
     width: 100%;
     display: flex;
     justify-content: center;
+
 }
 aside{
     display: flex;
@@ -188,17 +191,29 @@ aside span{
 }
 #portfolio .container-portfolio{
     width: 70%;
-    background-color: blue;
+    background-color: var(--rojo);
     display: grid; 
     grid-template-columns: 0.8fr 1.1fr 0.9fr 1.1fr; 
     grid-template-rows: 1.1fr 1.9fr 1fr; 
+    position: relative;
 }
 .container-portfolio img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
+    border: 1px solid var(--blush);
 }
+
+.container-portfolio:hover::after{
+    content: "Apreta en las imagenes para el zoom";
+    background-color: var(--blanco);
+    padding: 5px 10px;
+    position: absolute;
+    top: -5%;
+    right: 55%;
+    transition: 1s all ease;
+}
+
 .container-paginas{
     position: fixed;
     right: 2%;
