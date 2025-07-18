@@ -38,6 +38,7 @@ section#servicios {
 nav {
   grid-area: nav;
   background-color: yellow;
+  display: none;
 }
 aside {
   grid-area: publicidad;
