@@ -15,11 +15,14 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
+} 
+
 
 /*----------- header----------*/
 
-header{
+
+header{ 
+
     margin: 0;
     padding: 0;
     height: 10vh;
@@ -31,7 +34,8 @@ header{
     align-items: center;
     z-index: 1;
 
-}
+} 
+
 header:hover{
     background-color: var(--blanco);
     transition: 1.5s all ease-in-out;
@@ -66,13 +70,17 @@ header:not(hover){
 
 
 
+
+
+
 /*---------- Hero -----------*/
 
-#hero{
+section#hero{ 
     width: 100%;
     height: 100vh;
+
     border: 1px solid black;
-     background: linear-gradient(
+    background: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
@@ -81,8 +89,8 @@ header:not(hover){
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
+    border: 1px solid red;
+}     
 
 .video-fondo{
     width: 100%;
@@ -90,7 +98,7 @@ header:not(hover){
     z-index: -100;
     position: absolute;
     object-fit: cover;
-}
+} 
 .container-titulo h1, p{
     color: var(--blanco);
     font-family: 'Courier New', Courier, monospace;
@@ -148,6 +156,8 @@ span{
 
 
 /* --------portfolio ---------*/
+
+
 #portfolio{
     height: 100vh;
     width: 100%;
