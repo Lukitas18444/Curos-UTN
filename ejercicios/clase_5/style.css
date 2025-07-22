@@ -48,6 +48,7 @@ header{
     height: 100vh;
     z-index: -100;
     position: absolute;
+    object-fit: cover;
 }
 #hero h1{
     color: var(--blanco);
