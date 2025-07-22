@@ -15,6 +15,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 } 
 
 
@@ -44,8 +45,12 @@ header:hover{
 header:hover .items-modal a{
     color: black;
 }
+header:hover .container-logo{
+    color: black;
+}
 
-header:not(hover) .items-modal a{
+
+header:not(hover) .items-modal a, .container-logo{
     color: var(--blanco);
     transition: 0.5s all ease-in;
 }
@@ -90,11 +95,6 @@ header:not(hover){
 section#hero{ 
     width: 100%;
     height: 100vh;
-    background: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    );
     position: relative;
     display: flex;
     justify-content: center;
@@ -105,8 +105,20 @@ section#hero{
     width: 100%;
     height: 100vh;
     z-index: -100;
-    position: absolute;
+    position: fixed;
     object-fit: cover;
+} 
+.fondo{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    z-index: -1;
+    position: fixed;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    );
 } 
 .container-titulo h1, p{
     color: var(--blanco);
@@ -118,6 +130,7 @@ section#hero{
     align-items: center;
     text-align: center;
     font-size: 40px;
+    position: relative;
 }
 .container-titulo h1{
     font-size: 80px;
@@ -128,7 +141,28 @@ section#hero{
     width: 50px;
     height: 50px;
     border-radius: 100%;
+    position: absolute;
+    margin-top: 250px;
+    border: var(--beige) 1px solid;
+    padding: 5px 0px 10px 0px;
+    animation: saltar 2s infinite;
+    transition: all 2s ease-in-out;
 }
+@keyframes saltar{
+    0%{
+        margin-top: 250px;
+    }
+    25%{
+        margin-top: 150px;
+    }
+    50%{
+        margin-top: 150px;
+    }
+    100%{
+        margin-top: 250px;
+    }
+}
+
 
 
 .container-redes{
@@ -168,11 +202,12 @@ span{
 
 
 #portfolio{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     position: relative;
-    
+    background-color: #DBD3AD;
+    margin: 0 auto;
 }
 aside{
     display: flex;
@@ -180,6 +215,7 @@ aside{
     align-items: center;
     flex-direction: column;
     height: 30%;
+    position: sticky;
 }
 aside h4{
     font-family: 'nonuto';
@@ -190,7 +226,6 @@ aside h4{
 }
 aside ul{
     list-style: none;
-    gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,19 +233,23 @@ aside ul{
     font-family: var(--family);
     font-size: 25px;
 }
-aside span{
-    background-color: var(--blush);
-    width: 50vw;
-    height: 1px;
-    border: 1px solid var(--blush);
-}
+
 #portfolio aside{
     width: 20%;
     background-color: var(--blanco);
 }
-#portfolio .container-portfolio{
-    height: 50vh;
-    width: 70%;
+.container-portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* #portfolio .container-portfolio{
+    height: 100%;
+    width: 100%;
     background-color: var(--rojo);
     display: grid; 
     grid-template-areas: 
@@ -220,8 +259,9 @@ aside span{
     'septima octava novena';
     grid-template-rows: 1fr 1fr 1fr 1fr ;
     grid-template-columns: 30% 30% auto;
-}
-.primera{
+} 
+*/
+/* .primera{
     grid-area: primera;
     background-color: #C2714F;
 }
@@ -249,11 +289,11 @@ aside span{
 }
 .novena{
     grid-area: novena;
-}
+} */
 .container-portfolio img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
     border: 1px solid var(--blush);
 }
 
