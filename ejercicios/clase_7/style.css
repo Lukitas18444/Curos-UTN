@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --blanco: #EEF5DB;
+    --verde: #D6D1B1;
+    --rojo: #FE5F55;
+    --marron: #F0B67F;
+    --beige: #D6D1B1;
+    --flecha: ↓;
+    --family: 'Nunito'
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+} 
+
+body{
+    background-color: var(--blanco);
+
+    display: grid; 
+    grid-template-columns: 0.6fr 2.4fr; 
+    grid-template-rows: 0.4fr 0.2fr 1fr 2.9fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "hero hero"
+        "aside menu"
+        "footer footer"; 
+    height: 100%;
+    width: 100%;
+}
+header{
+    grid-area: header;
+    background-color: #D6D1B1;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    grid-area: nav;
+    border: 1px solid black;
+}
+#hero{
+    background-color: red;
+    grid-area: hero;
+    border: 1px solid white;
+}
+aside{
+    grid-area: aside;
+    border: 1px solid blueviolet;
+}
+main{
+    grid-area: menu;
+    border: 1px solid blue;
+}
+
+#hero{
+    
+}
+
+footer{
+    grid-area: footer;
+    border: 1px solid brown;
+}
