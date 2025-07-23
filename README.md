@@ -1,3 +1,0 @@
-# clasegithub
-
-Clases en UTN
