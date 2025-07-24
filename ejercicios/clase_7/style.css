@@ -18,9 +18,13 @@
     
 } 
 
-body{
-    background-color: var(--blanco);
+/*------- Body ----------*/
 
+body{
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     display: grid; 
     grid-template-columns: 0.6fr 2.4fr; 
     grid-template-rows: 0.4fr 0.2fr 1fr 2.9fr 0.5fr; 
@@ -34,37 +38,126 @@ body{
     height: 100%;
     width: 100%;
 }
+
+
+/*------- Fin Body ----------*/
+
+/*------- Header -------------*/
 header{
     grid-area: header;
-    background-color: #D6D1B1;
+    /* background-color: #D6D1B1; */
     border: 1px solid red;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+.container-logo{
+    background-color: #9198e5;
+}
+.container-logo h1{
+    font-family: 'Nunito';
+    padding: 0px 20px;
+}
+.container-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.container-items li{
+    color: black;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.container-items li:hover{
+    color: #9198e5;
+}
+
+ .container-items li::after{
+    content: "";
+    background-color: #9198e5;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.container-items li:hover::after{
+    width: 100%;
+}
+
+
+/*------- Fin Header -------------*/
+
+/*------- nav -------------*/
 nav{
     grid-area: nav;
     border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #9198e5;
+    position: relative;
+    padding: 10px;
 }
+nav p{
+    position: absolute;
+    left: 0;
+    animation: end infinite 10s ease;
+}
+@keyframes end {
+    0%{
+        left: -25%;
+    }
+    100%{
+        left:50%;
+    }
+}
+
+/*------- nav fin -------------*/
+
+
+/*------- Hero -------------*/
 #hero{
     background-color: red;
     grid-area: hero;
-    border: 1px solid white;
+    border: 1px solid white;  
+    width: 100%;
+    z-index: -100;
+    position: absolute;
 }
+
+
+/*------- fin hero -------------*/
+
+/*------- aside -------------*/
 aside{
     grid-area: aside;
     border: 1px solid blueviolet;
 }
+
+
+/*------- fin aside -------------*/
+
+
+/*------- main -------------*/
 main{
     grid-area: menu;
     border: 1px solid blue;
 }
 
-#hero{
-    
-}
+/*------- fin main -------------*/
 
+/*------- footer -------------*/
 footer{
     grid-area: footer;
     border: 1px solid brown;
 }
+/*------- fin footer -------------*/
