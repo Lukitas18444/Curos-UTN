@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --blanco: #DBD3AD;
+    --blush: #E0607E;
+    --rojo: #D36060;
+    --marron: #C2714F;
+    --beige: #F6C5AF;
+    --flecha: ↓;
+    --family: 'Nunito'
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+} 
+
+
+/*----------- header----------*/
+
+
+
+
+
+/*----------- fin header----------*/
+
+
+
+
+
+
+/*---------- Hero -----------*/
+
+
+/*---------- Fin Hero -----------*/
+
+
+
+
+
+
