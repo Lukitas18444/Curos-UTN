@@ -15,24 +15,136 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
 } 
 
 
 /*----------- header----------*/
 
+header{
+    width: 100%;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+}
+.container-logo{
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+header .container-logo img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0%;
+    right:0;
+}
+.container-items{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 30px;
+    font-family: 'nunito';
+    font-size: 25px;
+}
+.container-items a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: 1s all ease-in-out;
+}
+.container-items a:hover{
+    color: var(--marron);
+}
+.container-items a::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    color: var(--marron);
+    background-color: #C2714F;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.container-items a:hover::after{
+    width: 100%;
+    transition: 1s width ease;
+}
+.container-lupa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-lupa input{
+    width: 200px;
+    border: #C2714F;
+    outline: none;
+    border-radius: 8px;
+    height: 40px;
 
+}
+.container-lupa input::placeholder{
+    padding: 5px 10px;
+    color: var(--marron);
+}
 
 
 
 /*----------- fin header----------*/
+/*----------- nav----------*/
 
+
+nav{
+    height: 35px;
+    width: 100%;
+    background-color: #C2714F;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.container-novedades p{
+    color:var(--rojo);
+    font-size: 20px;
+}
+
+
+
+
+
+
+/*------------fin nav--------------*/
 
 
 
 
 
 /*---------- Hero -----------*/
+
+
+.video-fondo{
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+    position:absolute;
+    object-fit: cover;
+}
+.fondo{
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.8)
+    );
+    width: 100%;
+    height: 98vh;
+    z-index: -1;
+}
+
 
 
 /*---------- Fin Hero -----------*/
