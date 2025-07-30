@@ -24,23 +24,31 @@ header{
     width: 100%;
     background-color: var(--blanco);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
+/*     justify-content: center;
+    align-items: center; */
+    height: 8vh;
     position: fixed;
+    z-index: 1;
+    gap: 0 5%;
 }
+
 .container-logo{
     position: relative;
-    width: 200px;
-    height: 100px;
+    height: 100%;
+    justify-self: start;
 }
 header .container-logo img{
-    width: 200px;
-    height: auto;
+    width: 100px;
+/*     height: auto; */
     object-fit: cover;
-    position: absolute;
+/*     position: absolute; */
     top: 0%;
     right:0;
+}
+header div:nth-child(3){
+    justify-self: end;
+    background-color: #C2714F;
+    border: 1px solid black;
 }
 .container-items{
     list-style: none;
@@ -50,6 +58,7 @@ header .container-logo img{
     gap: 0px 30px;
     font-family: 'nunito';
     font-size: 25px;
+    border: 1px solid beige;
 }
 .container-items a{
     text-decoration: none;
@@ -85,7 +94,7 @@ header .container-logo img{
     outline: none;
     border-radius: 8px;
     height: 40px;
-
+    padding: 0 25px;
 }
 .container-lupa input::placeholder{
     padding: 5px 10px;
@@ -126,6 +135,37 @@ nav{
 
 /*---------- Hero -----------*/
 
+#hero{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+        background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.8)
+    );
+    position: relative;
+
+}
+#hero h2{
+    color: red;
+    justify-items: center;
+    align-self: center;
+
+}
+#hero .redes{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
 .video-fondo{
     width: 100%;
@@ -134,23 +174,36 @@ nav{
     position:absolute;
     object-fit: cover;
 }
-.fondo{
-    background: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.8)
-    );
-    width: 100%;
-    height: 98vh;
-    z-index: -1;
-}
 
 
 
 /*---------- Fin Hero -----------*/
 
 
+/*----------Main -------------*/
+main{
+    display: grid;
+    width: 70%;
+    height: 100vh;
+    grid-template-areas: 
+    'aside productos publicidad';
+    grid-template-rows: repeat(0.5fr);
+    grid-template-columns: 0.2fr 1.5fr 0.2fr;
+    margin: 0 auto;
+}
+.aside{
+    grid-area: aside;
+    border: 1px solid black;
+}
+.container-productos{
+    grid-area: productos;
+    border: 1px solid pink;
+}
+.publicidad{
+    grid-area: publicidad;
+    border: 1px solid green;
+}
 
 
 
-
+/*----------Fin Main -------------*/
