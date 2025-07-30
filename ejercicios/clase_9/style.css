@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --blanco: #DBD3AD;
+    --blush: #E0607E;
+    --rojo: #D36060;
+    --marron: #C2714F;
+    --beige: #F6C5AF;
+    --flecha: ↓;
+    --family: 'Nunito'
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+.container-hero{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12fr, 1fr);
+    background-image: url("/Cursos-UTN/ejercicios/clase_8/images/logo.png");
+}
+header{
+    grid-column: 1/13;
+    background-color: #D36060;
+}
+.container-hero H2{
+    grid-column: 4 / 6;
+    background-color: #DBD3AD;
+    grid-row: 3/2;
+}
+.container-hero div{
+    grid-column: 4/6;
+    grid-area: 5/6;
+    background-color:#DBD3AD;
+}

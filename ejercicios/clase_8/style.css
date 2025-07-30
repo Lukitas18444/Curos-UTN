@@ -24,8 +24,8 @@ header{
     width: 100%;
     background-color: var(--blanco);
     display: flex;
-/*     justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     height: 8vh;
     position: fixed;
     z-index: 1;
@@ -35,7 +35,9 @@ header{
 .container-logo{
     position: relative;
     height: 100%;
-    justify-self: start;
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
 }
 header .container-logo img{
     width: 100px;
@@ -174,7 +176,14 @@ nav{
     position:absolute;
     object-fit: cover;
 }
-
+.container-hero{
+    height: 100%;
+    width: 100%;
+    background-color: #D36060;
+    display: flex;
+    justify-content: center;
+    al
+}
 
 
 /*---------- Fin Hero -----------*/
