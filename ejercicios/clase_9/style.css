@@ -227,14 +227,38 @@ header{
     left: 0%;
     top: 90%;
     right: 100%;
-    animation: movida infinite 2s ease-in-out;
+    animation: movida infinite 2s ;
 }
 @keyframes movida {
+    0%{
+        bottom: 10%;
+        left: 0%;
+        top: 90%;
+        right: 100%;
+    }
     2%{
         bottom: 5%;
         left: 2%;
         top: 95%;
+        right: 98%;
     }
+    3%{
+        bottom: 10%;
+        left: 2%;
+        top: 90%;
+        right: 98%;
+    }
+    5%{
+        bottom: 5%;
+        left: 5%;
+        right: 95%;
+    }
+/*     100%{
+        bottom: 10%;
+        left: 0%;
+        top: 90%;
+        right: 100%;
+    } */
 }
 
 
