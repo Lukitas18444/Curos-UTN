@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    margin: auto;
+    width: 25%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    box-shadow: 10px 10px 25px black;
+    transition: all 0.3s ease-in-out 
+}
+.container:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px black
+}
+.container .tarjeta h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.container img{
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 100%;
+    object-fit: cover;
+}
+.container div a{
+    text-decoration: none;
+    color: #ff7e5f;
+    transition: all 0.4s;
+}
+.container div a:hover{
+    color: black;
+}
+
+@media (max-width: 980px) {
+    .container{
+        width: 50%;
+    }
+}
